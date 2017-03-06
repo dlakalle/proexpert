@@ -1,0 +1,56 @@
+<md-dialog flex="50" class="contenedor_temporal">
+  <md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{ perfil.nombre }}</span>
+      <span class="md-subhead">{{ perfil.cargo }}</span>
+      <span class="md-subhead">{{ perfil.area }}</span>
+      <span class="md-subhead">{{ perfil.sueldo }}</span>
+    </md-card-title-text>
+    <md-card-title-media>
+      <div class="md-media-lg card-media">
+        <img src="{{ perfil.imagen }}">
+      </div>
+    </md-card-title-media>
+  </md-card-title>
+  <md-card-content>
+    <ul>
+      <li>
+        <b>CARRERA:</b> {{ perfil.carrera }}
+      </li>
+      <li>
+        <b>CASA DE ESTUDIO:</b> {{ perfil.universidad }}
+      </li>
+      <li>
+        <b>EXPERIENCIA:</b> {{ perfil.experiencia }}
+      </li>
+      <li>
+        <b>EDAD:</b> {{ perfil.edad }}
+      </li>
+      <li>
+        <b>TIPO EMPRESA:</b> {{ perfil.tamano_empresa }}
+      </li>
+      <li>
+        <b>NIVEL DE INGLÉS:</b> {{ perfil.nivel_ingles }}
+      </li>
+      <li>
+        <b>EDAD:</b> {{ perfil.edad }}
+      </li>
+      <li>
+        <b>GÉNERO:</b> {{ perfil.genero }}
+      </li>
+      <li>
+        <b>ESTUDIOS ADICIONALES:</b> {{ perfil.estudios_adicionales }}
+      </li>
+      <li>
+        <b>REPRESENTADO EN DATOS:</b> {{ perfil.representado_en }}
+      </li>
+    </ul>
+  </md-card-content>
+  
+  <md-card-actions layout="row" layout-align="end center">
+    <md-button ng-click="cancelar()">VER PROYECCIÓN</md-button>
+  </md-card-actions>
+</md-card>
+
+</md-dialog>

@@ -1,0 +1,16 @@
+.layout_container {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.layout_tarjetas {
+	flex: 1;
+	margin-top: 6px;
+}
+
+.layout_tarjeta{
+	margin-top: 24px;
+	margin-left: 30px;
+}

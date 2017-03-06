@@ -1,0 +1,12 @@
+<div style="display:flex; flex-wrap: wrap;">
+  <md-card ng-repeat="perfil in $ctrl.perfiles | orderBy:'grupo'" style="flex: 0 0 150px;">
+    <img ng-src="{{perfil.imagen}}" class="md-card-image" alt="Sin Imagen" ng-click="$ctrl.showPopup($event, perfil)" title="{{ perfil.nombre }}">
+    <md-card-title style="background-color:{{ $ctrl.colores[perfil.grupo] }}">
+      <md-card-title-text>
+        <span class="md-subhead">{{ perfil.sueldo }}</span>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+</div>
+
+
